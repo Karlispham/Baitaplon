@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>K.DAE FASHION</title>
+        <script>
+            (function() {
+            const savedLang = localStorage.getItem("language") || "en";
+            localStorage.setItem("language", savedLang);
+            })();
+        </script>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Imperial+Script&family=MonteCarlo&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/contact.css" />
+    </head>
+    <body>
+        <!--Header-->
+        <section class="header">
+            <h2><a href="home.html" class="logo">K.DAE</a></h2>
+
+                <ul class="navbar">
+                    <li><a data-i18n="HOME" href="home.html">HOME</a></li>
+                    <li><a data-i18n="ABOUT" href="about.html">ABOUT</a></li>
+                    <li><a data-i18n="CONTACT"class="active" href="contact.html">CONTACT</a></li>
+                    <li><a data-i18n="SHOP" href="shop.html">SHOP</a></li>
+                    <li><a data-i18n="NEWS" href="news.html">NEWS</a></li>
+                </ul>
+
+                <ul class="icons">
+                    <li class="search-box">
+                        <input type="text" data-i18n-placeholder="search" placeholder="search..." />
+                        <i class="ri-search-line" style="color: white;"></i>
+                    </li>
+                    <li><a href="#"><i class="ri-instagram-fill" style="color: white;"></i></a></li>
+                    <li><a href="#"><i class="ri-facebook-box-fill" style="color: white;"></i></a></li>
+                    <li><a href="../html/login.html"><i class="ri-user-fill" style="color: white;"></i></a></li>
+                </ul>
+        </section>
+
+        <!--Contact-->
+        <section class="contact">
+            <div class="panner">
+                <div><img src="../images/Models-contact.png" class="contact-img"></div>
+                <div class="text">
+                    <h1 data-i18n="need_help">Need Help?</h1>
+                    <p data-i18n="text_1">K.DAE is happy to assist you. Please leave your information and we'll get back to you as soon as possible.</p>
+                    <div class="name-email">
+                        <div class="name">
+                            <p data-i18n="full_name">Full Name*</p>
+                            <input type="text" data-i18n-placeholder="your_full_name" placeholder="Your full name">
+                        </div>
+                        <div class="email">
+                            <p data-i18n="email">Email*</p>
+                            <input type="text" data-i18n-placeholder="your_email_address" placeholder="Your email address">
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p data-i18n="message">Message*</p>
+                        <input type="text" data-i18n-placeholder="feel_free" placeholder="Feel free to ask us about your order">
+                    </div> 
+                    <button data-i18n="send" class="submit">Send</button>
+                </div>
+            </div>
+        </section>
+
+        <!--Information-->
+        <section class="infor">
+            <div class="thong_tin_lien_he">
+                <h2 data-i18n="info4">Contact Information</h2>
+                <ul class="chi-tiet">
+                    <li data-i18n="thuong_hieu">Brand: K.DAE - A Fashion Brand from Vietnam</li>
+                    <li data-i18n="folder">Founder: Karlis Pham</li>
+                    <li data-i18n="email">Email: hello@kdae.style.vn</li>
+                    <li data-i18n="sdt">Phone: +84 987 654 321</li>
+                    <li data-i18n="address">K.DAE Studio: 3rd Floor, La Moda Building, 128 Chua Lang, Dong Da, Hanoi</li>
+                </ul>
+            </div>
+            <div class="mangxahoi">
+                <h2 data-i18n="social">Social Media</h2>
+                <ul class="chi-tiet">
+                    <li>Instagram: <a href="">@kdae.official</a></li>
+                    <li>Facebook: <a href="">facebook.com/kdae.officia</a></li>
+                    <li>TikTok: <a href="">@kdae.official</a></li>
+                    <li>LinkedIn: <a href="">K.DAE Fashion</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!--Khuyến Mãi-->
+        <section class="promotion">
+            <div class="text">
+                <p data-i18n="text_2">SUBSCRIBE FOR PROMOTIONS</p>
+            </div>
+            <div class="nut">
+                <input type="text" data-i18n-placeholder="nhap_address" placeholder="Enter your email address">
+                <button data-i18n="submit" >Submit</button>
+            </div>
+        </section>
+
+        <!--Đã từng hợp tác-->
+        <div class="partner-section">
+            <h3 data-i18n="da_tung">PAST COLLABORATIONS</h3>
+            <p data-i18n="text_3">
+                    Throughout our development journey, K.DAE has had the opportunity to collaborate with various domestic and international brands across fashion, cosmetics, technology, and fast-moving consumer goods. These partnerships have contributed to shaping K.DAE's style and spirit of innovation.
+            </p>
+
+            <h3 data-i18n="doi_tac">SOME NOTABLE PARTNERS:</h3>
+            <ul>
+                <li>
+                    <label data-i18n="title_1">Fashion & Accessories:</label>
+                    <div class="partner-list">
+                        Zenos | Farra | KAVA Studio | JNOU | Stride Club | BITS | Ovin Homme | Perdoir | NB Balance | ADDS | PUMO | Supreen | Rhis Men | Markwear | Elova | TLAB | SOWEAR | Venci | CooMen | GUMAG | Sabla | OLVN | Vashoes | WKC
+                    </div>
+                </li>
+                <li>
+                    <label data-i18n="title_2">Beauty & Cosmetics:</label>
+                    <div class="partner-list">
+                        Luvreal | Keyels | DCH Cosmetics | Tranzina | Martixderm | Paula's Skin | The Basic Lab | La Shine | Vijulla | M.Lan Beauty | Aperi Vietnam | ColarKey
+                    </div>
+                </li>
+                <li>
+                    <label data-i18n="title_3">Technology & Electronics:</label>
+                    <div class="partner-list">
+                        Samzen | Philex | Miomi | EZCCTV | Kendro | Deermax
+                    </div>
+                </li>
+                <li>
+                    <label data-i18n="title_4">Home & FMCG:</label>
+                    <div class="partner-list">
+                        Sunnex | Beahome | Orica | Kitto | Santra | Venson House | Hobar | YOWII | Ventax
+                    </div>
+                </li>
+                <li>
+                    <label data-i18n="title_5">Jewelry & Lifestyle:</label>
+                    <div class="partner-list">
+                        Pandera | Yuuma | Santalux | Hobana | The Mood Studio
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!--Footer-->
+        <section class="footer">
+            <div class="tagline">
+                <h2 class="logo">K.DAE</h2>
+                <p data-i18n="signature" class="signature">Timeless fashion. Designed for those who define their own style.</p>
+            </div>
+            <div class="menu">
+                <ul class="explore">
+                    <li data-i18n="explore" class="To">Explore</li>
+                    <li><a data-i18n="home" class="active" href="home.html">Home</a></li>
+                    <li><a data-i18n="about" href="#about">About</a></li>
+                    <li><a data-i18n="contact" href="contact.html">Contact</a></li>
+                    <li><a data-i18n="shop" href="shop.html">Shop</a></li>
+                    <li><a data-i18n="news" href="news.html">News</a></li>
+                </ul>
+                <ul class="in-store services">
+                    <li data-i18n="in_store" class="To">In-store Services</li>
+                    <li><a data-i18n="store" href="#">Store Locator</a></li>
+                    <li><a data-i18n="book_an" href="#">Book an Appointment</a></li>
+                    <li><a data-i18n="our_story" href="#">Our Story</a></li>
+                </ul>
+                <ul class="corporate">
+                    <li data-i18n="corporate" class="To">Corporate</li>
+                    <li><a data-i18n="corporate_reports"b href="#">Corporate Reports</a></li>
+                    <li><a data-i18n="anti" href="#">Anti-counterfeiting</a></li>
+                    <li><a data-i18n="financial" href="#">Financial Results</a></li>
+                    <li><a data-i18n="online_services" href="#">Online Services</a></li>
+                </ul>
+                <ul class="support-legal">
+                    <li data-i18n="support_legal" class="To">Support & Legal</li>
+                    <li><a data-i18n="careers" href="#">Careers</a></li>
+                    <li><a data-i18n="privacy" href="#">Privacy Policy</a></li>
+                    <li><a data-i18n="legal_notice" href="#">Legal Notice</a></li>
+                    <li><a data-i18n="care_services" href="#">Care & Services</a></li>
+                    <li><a data-i18n="FAQs" href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="language-container">
+                <div class="language">
+                    <label>
+                        <i class="ri-translate-2"></i>
+                    </label>
+                    <select id="lang" class="language-select">
+                        <option value="en">English</option>
+                        <option value="vi">Tiếng Việt</option>
+                        <option value="ko">한국어</option>
+                        <option value="zh">简体中文</option>
+                    </select>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="copyright-social">
+                <div class="copyright">
+                    <p>  © 2025 K.DAE. All rights reserved.<br>
+                    Crafted with elegance in Hanoi, Vietnam.</p>
+
+                </div>
+                <div class="social">
+                    <p>Follow Us</p>
+                    <ul>
+                        <li><a href="#"><i class="ri-instagram-fill" style="color: white;"></i></a></li>
+                        <li><a href="#"><i class="ri-facebook-box-fill" style="color: white;"></i></a></li>
+                        <li><a href="#"><i class="ri-tiktok-fill" style="color: white;"></i></a></li>
+                        <li><a href="#"><i class="ri-linkedin-box-fill" style="color: white;"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <script src="../js/contact.js"></script>
+    </body>
+</html>
+

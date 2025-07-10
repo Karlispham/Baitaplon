@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K.DAE Fashion</title>
+    <script>
+        (function() {
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        const savedLang = localStorage.getItem("language") || "en";
+        document.documentElement.classList.add(savedTheme);
+        localStorage.setItem("theme", savedTheme);
+        localStorage.setItem("language", savedLang);
+        })();
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Imperial+Script&family=MonteCarlo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body class="dark">
+    <div class="login">
+        <h1><a href="home.html" class="logo">K.DAE</a></h1>  
+        <div class="container">
+            <div class="box">
+                <h2 data-i18n="title" class="title">Sign In</h2>
+                <div class="input-box">
+                    <input type="text" id="email" placeholder="Email or mobile number"
+                    required data-i18n-placeholder="email">
+                </div>
+
+                <div class="input-box">
+                    <input type="password" id="password" data-i18n="passwword" placeholder="Password"
+                    required data-i18n-placeholder="passwword">
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox"><span data-i18n="remember">Remember me</span></label>
+                    <a href="#" data-i18n="forgot">Forgot Password?</a>
+                </div>
+
+                <button type="submit" data-i18n="btn"class="btn">Sign In</button>
+                <p data-i18n="or" class="or">OR</p>        
+                <button type="submit" data-i18n="btn_or" class="btn_or">Use a Sign-In Code</button>
+
+
+                <div class="register-link">
+                    <p><span data-i18n="register">Don't have an account?</span> <a data-i18n="link" href="#">Register</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="hom">
+            <h2><a data-i18n="contact" href="">Questions? Contact us.</a></h2>
+            <div class="list">
+                <ul class="noname">
+                    <li><a data-i18n="faq" href="">FAQ</a></li>
+                    <li><a data-i18n="cookie" href="">Cookie Preferences</a></li>
+                </ul>
+                <ul class="noname">
+                    <li><a data-i18n="help" href="">Help Center</a></li>
+                    <li><a data-i18n="corp" href="">Corporate Information</a></li>
+                </ul>            
+                <ul>
+                    <li><a data-i18n="terms" href="">Terms of Use</a></li>
+                </ul>            
+                <ul>
+                    <li><a data-i18n="privacy" href="">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="language-theme">
+                <div class="language">
+                    <label>
+                        <i class="ri-translate-2"></i>
+                    </label>
+                    <select id="lang" class="language-select">
+                        <option value="en">English</option>
+                        <option value="vi">Tiếng Việt</option>
+                        <option value="ko">한국어</option>
+                        <option value="zh">简体中文</option>
+                    </select>
+                </div>
+                <div class="theme-toggle">
+                    <label class="switch">
+                        <input type="checkbox" id="theme-switch">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>      
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+</html>
