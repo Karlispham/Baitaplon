@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login {
+  height: 100vh;
+  background-image: 
+    linear-gradient(#00000099, #00000099), 
+    url(../images/Login.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.login h1 {
+  padding: 20px 60px;
+}
+
+.logo {
+  font-size: 60px;
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container .box {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  padding: 40px 30px;
+  max-width: 420px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: white;
+  backdrop-filter: blur(4px);
+}
+
+.container .title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.2);
+  color: white;
+}
+
+.input-box input::placeholder {
+  color: #ddd;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.remember-forgot a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.remember-forgot input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  transform: scale(1.2);
+  cursor: pointer;
+  margin: 10px;
+}
+
+.btn, .btn_or {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #249fdd;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn_or {
+  background-color: #444;
+}
+
+.or {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.register-link {
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer {
+    background-color: #292929;
+    padding: 40px;
+}
+
+
+.hom {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hom h2 {
+    margin-bottom: 10px;
+}
+
+.hom a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.list {
+    display: grid; 
+    grid-template-columns: repeat(4,1fr);
+    max-width: 1200px;
+}
+
+.list ul li {
+    list-style: none;
+    margin-bottom: 20px;
+    font-size: 17px;
+
+}
+
+.language-theme {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.language {
+  display: inline-block;
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+  padding: 4px 10px;
+  margin-bottom: 20px;
+}
+
+.language i {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0 0 0 10px;
+}
+
+.language select {
+  background: transparent;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  padding: 6px 12px;
+  outline: none;
+  cursor: pointer;  
+}
+
+.language select:focus {
+  outline: none;
+}
+
+.language select option {
+  color: #292929;
+}
+
+/* Nút chuyển sáng/tối hiện đại */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  margin-left: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #999;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* Khi bật */
+.switch input:checked + .slider {
+  background-color: #249fdd;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(24px);
+}
+
+
+/* ==== Theme Switch: Light/Dark ==== */
+body.light {
+  background-color: #f2f2f2;
+}
+
+body.light .container .box,
+body.light .footer,
+body.light .login {
+  background-color: rgba(255, 255, 255, 0.41);
+  color: #111;
+}
+
+body.light .input-box input {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #111;
+  border: 1px solid #000000;
+}
+
+body.light .input-box input::placeholder {
+  color: #000000;
+}
+
+body.light .btn,
+body.light .btn_or {
+  background-color: #249fdd;
+  color: white;
+}
+
+body.light .btn_or {
+  background-color: #aaa;
+}
+
+body.light .register-link a,
+body.light .remember-forgot a,
+body.light .hom a {
+  color: #111;
+}
+
+body.light .language select,
+body.light .language i {
+  color: #111;
+}
+
+body.light .language {
+  border: 1px solid #111;
+}

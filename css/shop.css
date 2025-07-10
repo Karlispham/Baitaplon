@@ -1,0 +1,583 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+/* Header */
+.header {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 5px 15px rgb(0, 0, 0);
+    z-index: 99999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+h2 a {
+    font-style: italic;
+    font-size: 40px;
+    line-height: 64px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "DM Serif Text", serif;
+
+}
+
+.logo:focus {
+  outline: none;
+}
+/* navbar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    transition: 0.3s ease;
+    font-family: Arial, sans-serif;
+    font-weight: 300;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    color: rgb(68, 159, 223);
+    cursor: pointer;
+}
+
+
+
+/* icons */
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons li {
+    list-style: none;
+    padding: 0 15px;
+}
+
+.icons li a {
+    text-decoration: none;
+    font-size: 20px; 
+    transition: 0.3s ease;
+    font-size: 28px;
+}
+
+/* search box */
+
+.search-box input {
+    border: none;
+    background: transparent;
+    color: white;
+    outline: none;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    height: 30px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 6px 10px;
+    width: 250px;
+    background-color: transparent;
+    height: 35px;
+}
+
+.search-box box-icon {
+    cursor: pointer; 
+}
+
+.search-box i {
+    font-size: 28px;
+}
+
+/* Choice */
+.choice {
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+.choice ul {
+  padding: 0;
+  list-style: none;
+  background: #f2f2f2;
+  margin: 0;
+}
+
+.choice ul li {
+  display: inline-block;
+  position: relative;
+}
+
+.choice ul li a {
+  display: block;
+  padding: 10px 25px;
+  color: #333;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  white-space: nowrap;
+}
+
+.choice ul li a:hover {
+  color: #fff;
+  background: #939393;
+}
+
+/* Dropdown mặc định ẩn */
+.dropdown-menu,
+.dropdown-menu2 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  z-index: 9;
+  min-width: 200px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Khi hover vào li cha thì hiện dropdown cấp 1 */
+.choice ul li:hover > .dropdown-menu {
+  display: block;
+}
+
+/* Hiển thị menu cấp 2 */
+.dropdown-menu li {
+  position: relative;
+}
+
+.dropdown-menu li:hover > .dropdown-menu2 {
+  display: block;
+  top: 0;
+  left: 100%;
+}
+
+/* Style cho các menu con */
+.dropdown-menu ul,
+.dropdown-menu2 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu ul li,
+.dropdown-menu2 li {
+  width: 100%;
+}
+
+.dropdown-menu ul li a,
+.dropdown-menu2 li a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: #fff;
+}
+
+.dropdown-menu ul li a:hover,
+.dropdown-menu2 li a:hover {
+  background-color: #ededed;
+  color: #0493e6;
+  font-weight: 500;
+}
+
+
+/* Anh-Hero */
+
+.Hero {
+    width: 100%;
+    border: 1px solid #000000;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-container {
+    width: 100%;
+    height: 80vh;
+}
+
+.slide-container img {
+    width: 100%;
+    height: 100vh;
+    transition: opaccity 1s ease-in-out;
+}
+
+.buttons {
+    z-index: 99;
+    margin: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 0 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: #9393937e;
+    border: none;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* NEW ARRIVALS Mượn cho cả ALL PRODUCTS và BEST SELLER*/
+.new-arrivals {
+    margin-top: 5vh;
+}
+.title {
+    text-align: center;
+    font-size: 5vh;
+    margin-bottom: 5vh;
+}
+
+.title h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+    padding: 0 100px;
+}
+
+.product-card {
+    border: 1px solid #000000;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:  0 auto;
+    width: 40vh;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.product-card:hover {
+    transform: scale(1.03);
+}
+
+.image {
+    aspect-ratio: 3 / 4;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    height: auto;
+    display: block;
+    filter: drop-shadow( 5px 5px 5px #8a8a8a);
+}
+
+.info {
+    padding: 15px 0;
+    font-size: 15px;
+    width: 100%;
+    text-align: start;
+}
+
+.colors {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.color.gray { background: rgb(179, 179, 179); }
+.color.black { background: rgb(0, 0, 0); }
+.color.red { background: rgb(194, 43, 43); }
+.color.green { background: rgb(25, 91, 31); }
+.color.blue { background: rgb(0, 135, 213); }
+
+.add {
+    cursor: pointer;
+}
+
+.heart {
+    margin-left: auto;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+.heart::before {
+    content: attr(data-icon);
+    font-size: 30px;
+    color: black;
+    transform: 0.3s;
+}
+
+.heart:hover::before{
+    content: attr(data-icon-hover);
+    font-size: 30px;
+    color: red;
+}
+
+.heart.liked::before {
+    content: "♥";
+    color: red;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.sex, .size{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #555;
+}
+
+
+.name {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.price {
+    margin-bottom: 5px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #333;
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+.new-price {
+    color: red;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.rating {
+    font-weight: 600;
+    color: #ffc70f;
+    font-size: 18px; 
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    text-align: center;    
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 40px 0px;
+    margin-top: 30px;
+}
+
+.tagline {
+    margin-top: 5vh;
+}
+
+.footer h2 {
+    font-size: 8vh;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.slogan {
+    font-style: italic;    
+    font-family: "DM Serif Text", serif;
+    font-size: 3vh;
+}
+
+.signature {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3vh;
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap; /* cho phép co dòng */
+    justify-content: center;
+    gap: 80px;
+    margin-top: 60px;
+}
+
+
+.menu ul li {
+    list-style: none;
+    margin-bottom: 12px;
+    text-align: start;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu ul li a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    border-inline-end: none;
+    text-decoration: none;
+    font-size: 2vh;
+}
+
+.menu ul .To {
+    font-size: 2.5vh; 
+    font-weight: bold;
+    letter-spacing: 0.5px; /* tăng khoảng cách giữa các chữ nếu muốn */
+}
+
+.line {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 2px;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+}
+
+.copyright-social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 5px 0px;
+    text-align: center;
+}
+
+
+.copyright, .social {
+    max-width: 100%;
+    margin: 0;
+}
+
+.copyright {
+    font-size: 2vh;
+    margin-right: 60vh;
+    text-align: start;
+}
+
+.copyright p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.social {
+    font-size: 2vh;
+    margin-left: 60vh;
+}
+
+.social ul {
+    display: flex;
+    justify-content: center;
+    padding: 3px 5px;
+}
+
+.social p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 1vh;
+    text-align: left;
+    font-size: 2vh;
+    margin-left: 2.1vh;
+}
+
+.social ul li {
+    list-style: none;
+    padding: 3px 15px;
+}
+
+.social ul li i {
+    font-size: 28px;
+}
+
+.social ul li a {
+    text-decoration: none;
+}
+
+.language-container {
+    width: fit-content;
+    margin-left: 20vh;        
+    align-self: flex-start;
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.language {
+    display: inline-block;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 4px 10px;
+    border-radius: 25px;
+}
+
+.language i {
+    color: #ffffff;
+    padding: 0 0 0 10px;
+}
+
+.language select {
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    padding: 6px 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.language select:focus {
+  outline: none;
+}
+
+.language select option {
+  color: #292929;
+}

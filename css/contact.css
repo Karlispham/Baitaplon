@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+/* Header */
+.header {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 5px 15px rgb(0, 0, 0);
+    z-index: 99999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+h2 a {
+    font-style: italic;
+    font-size: 40px;
+    line-height: 64px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "DM Serif Text", serif;
+
+}
+
+.logo:focus {
+  outline: none;
+}
+/* navbar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    transition: 0.3s ease;
+    font-family: Arial, sans-serif;
+    font-weight: 300;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    color: rgb(68, 159, 223);
+    cursor: pointer;
+}
+
+
+/* icons */
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons li {
+    list-style: none;
+    padding: 0 15px;
+}
+
+.icons li a {
+    text-decoration: none;
+    font-size: 20px; 
+    transition: 0.3s ease;
+    font-size: 28px;
+}
+
+
+/* search box */
+
+.search-box input {
+    border: none;
+    background: transparent;
+    color: white;
+    outline: none;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    height: 30px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 6px 10px;
+    width: 250px;
+    background-color: transparent;
+    height: 35px;
+}
+
+.search-box box-icon {
+    cursor: pointer; 
+}
+
+.search-box i {
+    font-size: 28px;
+}
+
+/* Contact */
+
+.panner {
+    background: -webkit-linear-gradient(left, #249fdd, #86daf9,  #a5e1f7);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 90vh;
+}
+
+.panner img {
+    margin-right: 50vh;
+    margin: 10vh;
+}
+
+.contact-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.panner .text {
+    padding: 10vh 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+}
+
+.panner .text h1 {
+    font-size: 5vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.panner .text p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    color: #000000;
+    font-size: 17px;
+    padding-bottom: 5px;
+}
+
+.name-email {
+    display: flex;
+    flex-direction: row;
+    gap: 10vh
+}
+
+.name-email input {
+    height: 40px;
+    width: 40vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    color: #222;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.message input {
+    height: 20vh;
+    width: 90vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#222;
+    font-size: 17px;
+    border: none;
+    padding: 10px 10px 110px 10px;
+    border-radius: 5px;
+}
+
+.submit {
+    width: 30vh;
+    height: 40px;
+    color: #ffffff;
+    background-color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Information */
+
+.infor {
+    padding: 20px;
+    display: flex;
+}
+
+.thong_tin_lien_he {
+    flex: 1;
+    border-right: 1px solid #000000; /* Đường phân cách cột */
+    padding: 20px 50px;
+}
+
+.thong_tin_lien_he h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mangxahoi h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mangxahoi {
+    flex: 1;
+    padding: 20px 50px;
+}
+
+.chi-tiet {
+    list-style: none;
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+.chi-tiet li {
+    padding: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chi-tiet li a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
+}
+
+/* Khuyến Mãi */
+
+.promotion {
+    background:  #25a6e6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.text p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nut {
+    margin: 0;
+}
+
+.nut input {
+    height: 40px;
+    width: 50vh;
+    border: none;
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nut button {
+    height: 40px;
+    width: 60px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+}
+
+/* Đã từng hợp tác */
+
+.partner-section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+    line-height: 1.6;
+    margin: 10vh 20vh;
+}
+
+.partner-section h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.partner-section p {
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.partner-section ul {
+    list-style: disc;
+    margin-left: 20px;
+    padding-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.partner-section li {
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.partner-section .partner-list {
+    margin-top: 5px;
+    margin-left: 20px;
+    line-height: 1.8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    text-align: center;    
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 40px 0px;
+}
+
+.tagline {
+    margin-top: 5vh;
+}
+
+.footer h2 {
+    font-size: 8vh;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.slogan {
+    font-style: italic;    
+    font-family: "DM Serif Text", serif;
+    font-size: 3vh;
+}
+
+.signature {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3vh;
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap; /* cho phép co dòng */
+    justify-content: center;
+    gap: 80px;
+    margin-top: 60px;
+}
+
+
+.menu ul li {
+    list-style: none;
+    margin-bottom: 12px;
+    text-align: start;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu ul li a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    border-inline-end: none;
+    text-decoration: none;
+    font-size: 2vh;
+}
+
+.menu ul .To {
+    font-size: 2.5vh; 
+    font-weight: bold;
+    letter-spacing: 0.5px; /* tăng khoảng cách giữa các chữ nếu muốn */
+}
+
+.line {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 2px;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+}
+
+.copyright-social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 5px 0px;
+    text-align: center;
+}
+
+
+.copyright, .social {
+    max-width: 100%;
+    margin: 0;
+}
+
+.copyright {
+    font-size: 2vh;
+    margin-right: 60vh;
+    text-align: start;
+}
+
+.copyright p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.social {
+    font-size: 2vh;
+    margin-left: 60vh;
+}
+
+.social ul {
+    display: flex;
+    justify-content: center;
+    padding: 3px 5px;
+}
+
+.social p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 1vh;
+    text-align: left;
+    font-size: 2vh;
+    margin-left: 2.1vh;
+}
+
+.social ul li {
+    list-style: none;
+    padding: 3px 15px;
+}
+
+.social ul li i {
+    font-size: 28px;
+}
+
+.social ul li a {
+    text-decoration: none;
+}
+
+.language-container {
+    width: fit-content;
+    margin-left: 20vh;        
+    align-self: flex-start;
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.language {
+    display: inline-block;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 4px 10px;
+    border-radius: 25px;
+}
+
+.language i {
+    color: #ffffff;
+    padding: 0 0 0 10px;
+}
+
+.language select {
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    padding: 6px 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.language select:focus {
+  outline: none;
+}
+
+.language select option {
+  color: #292929;
+}
